@@ -61,14 +61,13 @@ public class War {
       System.out.printf("player 1: %d. Player 2 : %d.%n", war.tally1, war.tally2);
       if (war.tally1 > war.tally2) {
         System.out.println("Player 1 wins!");
-      } else if (war.tally1 < war.tally2)
-        ;
-      System.out.println("Player 2 wins!");
-    } else{
-      System.out.println("Tie");
+      } else if (war.tally1 < war.tally2) {
+        System.out.println("Player 2 wins!");
+      } else {
+        System.out.println("Tie");
+      }
     }
   }
-
 
   private static class Referree implements Comparator<Card> {
 
